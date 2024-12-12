@@ -1,16 +1,20 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Room } from "@/components/card/room";
 import { useTheme } from "next-themes";
-import Image from "next/image";
-import { useState } from "react";
 
 
 export default function Home() {
+  const {theme, resolvedTheme, setTheme} = useTheme();
+
   return (
-    <div className={`dark bg-background p-2 transition-colors duration-500`}>
-      <p className={`text-white`}>dsoidosidos</p>
-      <Button onClick={()=>{}}>MUDAR</Button>
+    <div className={`
+      h-screen w-screen 
+      bg-gradient-to-br from-backgroundShade3 to-backgroundShade1
+      transition-colors duration-500
+      `}>
+        <p className={`text-white text-lg`}>123</p>
+        <Room></Room>
     </div>
   );
 }

@@ -3,7 +3,6 @@ CREATE TABLE ApiChecker_Rooms (
   id SERIAL PRIMARY KEY,
   custom_code VARCHAR, -- If None, Hashed ID
   password VARCHAR, -- None by default
-  theme INT -- None by default (Default theme)
 );
 
 CREATE TABLE ApiChecker_APIs (
