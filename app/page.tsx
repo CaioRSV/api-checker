@@ -9,12 +9,13 @@ export default function Home() {
 
   return (
     <div className={`
-      h-screen w-screen 
+      min-h-screen w-full
       bg-gradient-to-br from-backgroundShade3 to-backgroundShade1
       transition-colors duration-500
+      flex justify-center items-center
+      py-5
       `}>
-        <p className={`text-white text-lg`}>123</p>
-        <Room></Room>
+        <Room/>
     </div>
   );
 }

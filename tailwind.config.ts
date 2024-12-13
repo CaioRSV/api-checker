@@ -53,13 +53,18 @@ export default {
 			backgroundShade1: 'hsl(var(--background-shade-1))',
 			backgroundShade2: 'hsl(var(--background-shade-2))',
 			backgroundShade3: 'hsl(var(--background-shade-3))',
+
+			brandBadgeColor: 'hsl(var(--brand-badge-color))',
+
+			successGreen: 'hsl(var(--success-green))',
+			failureRed: 'hsl(var(--failure-red))',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	},
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
