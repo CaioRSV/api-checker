@@ -10,8 +10,10 @@ import {
   ToggleGroupItem,
 } from "@/components/ui/toggle-group"
 
+import { useViewGridModeContext } from '@/app/contexts/ViewGridModeContext';
+
 export function ViewModeSwitcher() {
-  const [viewGridMode, setViewGridMode] = useState<"onePerLine" | "manyPerLine">("onePerLine");
+  const {viewGridMode, setViewGridMode} = useViewGridModeContext();
 
   return (
       <div className={`

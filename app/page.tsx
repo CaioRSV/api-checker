@@ -1,21 +1,27 @@
 "use client";
 
 import { Room } from "@/components/card/room";
-import { useTheme } from "next-themes";
 
+import { motion } from "framer-motion";
 
 export default function Home() {
-  const {theme, resolvedTheme, setTheme} = useTheme();
-
   return (
     <div className={`
       min-h-screen w-full
       bg-gradient-to-br from-backgroundShade3 to-backgroundShade1
-      transition-colors duration-500
+      transition-colors duration-200
       flex justify-center items-center
       py-5
       `}>
-        <Room/>
+        <motion.div
+          initial={{ opacity: 0, y: +20}}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ 
+            duration: 0.8
+           }}
+        >
+          <Room/>
+        </motion.div>
     </div>
   );
 }

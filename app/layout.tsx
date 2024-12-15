@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { ViewGridModeProvider } from "./contexts/ViewGridModeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,9 @@ export default function RootLayout({
           themes={["dark", "light", "default"]}
           //disableTransitionOnChange
         >
-          {children}
+          <ViewGridModeProvider>
+            {children}
+          </ViewGridModeProvider>
         </ThemeProvider>
       </body>
     </html>
