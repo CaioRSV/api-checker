@@ -1,22 +1,25 @@
 import React from 'react'
 import Header from './header';
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Body from './body';
 import RoomConfig from './roomConfig';
 import ThemeSwitcher from './themeSwitcher';
 
 export function Room() {
   return (
-    <div className={`
+    <motion.div 
+    layout
+    style={{ minHeight: "fit-content", height: "auto" }}
+    animate={{height: "auto"}}
+    transition={{
+      duration: 1.5,
+    }}
+    className={`
       max-w-[90%]
       w-[90%]
       sm:w-[1000px]
 
-      min-h-fit
-      h-[85vh]
-
-      sm:h-[500px]
       bg-background
       border-2
       border-slate-500
@@ -30,14 +33,15 @@ export function Room() {
     `}>
       <Header/>
 
-      <motion.div 
+      <motion.div
+        layout
         initial={{opacity: 0, y: +10}}
-        animate={{opacity: 1, y: 0}}
+        animate={{opacity: 1, y: 0, flex: 1, height: 'auto'}}
         transition={{
           duration: 0.8,
           delay: 1.2
         }}
-        className={`flex-1`}
+        className={`flex-1 bg-purple-600 p-2 m-2 transition-all`}
       >
         <Body/>
       </motion.div>
@@ -46,8 +50,7 @@ export function Room() {
         <RoomConfig/>
         <ThemeSwitcher/>
       </div>
-      
-      
-    </div>
+
+    </motion.div>
   )
 }
