@@ -1,6 +1,6 @@
 "use client";
 
-import { Room } from "@/components/card/room";
+import { Room } from "@/components/room/room";
 
 import { motion } from "framer-motion";
 

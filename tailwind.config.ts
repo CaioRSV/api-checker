@@ -54,6 +54,12 @@ export default {
 			backgroundShade2: 'hsl(var(--background-shade-2))',
 			backgroundShade3: 'hsl(var(--background-shade-3))',
 
+			backdropShade1: 'hsl(var(--backdrop-shade-1))',
+			backdropShade2: 'hsl(var(--backdrop-shade-2))',
+
+			borderLight: 'hsl(var(--border-light))',
+			borderDark: 'hsl(var(--border-dark))',
+
 			brandBadgeColor: 'hsl(var(--brand-badge-color))',
 
 			successGreen: 'hsl(var(--success-green))',

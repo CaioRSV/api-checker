@@ -39,9 +39,15 @@ body {
     --background-shade-2: 200 31% 74%;
     --background-shade-3: 200 15% 53%;
 
+    --backdrop-shade-1: 217, 49%, 8%;
+    --backdrop-shade-2: 207, 42%, 21%;
+
+    --border-light: 217, 21%, 42%;
+    --border-dark: 208, 14%, 21%;
+
     --brand-badge-color: 192 100% 21.6%;
 
-    --success-green: 0 100% 50%;
+    --success-green: 135, 53%, 49%;
     --failure-red: 0 100% 50%;
   }
 
@@ -75,9 +81,15 @@ body {
     --background-shade-2: 0 0% 0;
     --background-shade-3: 0 0% 0;
 
+    --backdrop-shade-1: 217, 49%, 8%;
+    --backdrop-shade-2: 207, 42%, 21%;
+
+    --border-light: 217, 21%, 42%;
+    --border-dark: 208, 14%, 21%;
+
     --brand-badge-color: 192 100% 21.6%;
 
-    --success-green: 0 100% 50%;
+    --success-green: 135, 53%, 49%;
     --failure-red: 0 100% 50%;
   }
 
@@ -111,10 +123,32 @@ body {
     --background-shade-2: 217 56% 8%;
     --background-shade-3: 0 0% 0;
 
+    --backdrop-shade-1: 217, 49%, 8%;
+    --backdrop-shade-2: 207, 42%, 21%;
+
+    --border-light: 217, 21%, 42%;
+    --border-dark: 208, 14%, 21%;
+
     --brand-badge-color: 192 100% 21.6%;
 
-    --success-green: 0 100% 50%;
+    --success-green: 135, 53%, 49%;
     --failure-red: 0 100% 50%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0; 
+    background: transparent;
+  }
+
+  html, body {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
   }
   
 }
