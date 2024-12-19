@@ -13,4 +13,5 @@ export type ApiItemType = {
     checkInterval?: number;
     toleranceType?: toleranceType;
     allowRedirect?: boolean;
+    description?: string;
 };

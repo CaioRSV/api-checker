@@ -48,7 +48,8 @@ body {
     --brand-badge-color: 192 100% 21.6%;
 
     --success-green: 135, 53%, 49%;
-    --failure-red: 0 100% 50%;
+    --failure-red: 0, 53%, 49%;
+    --warning-yellow: 51 53% 49%;
   }
 
   .dark {
@@ -90,7 +91,8 @@ body {
     --brand-badge-color: 192 100% 21.6%;
 
     --success-green: 135, 53%, 49%;
-    --failure-red: 0 100% 50%;
+    --failure-red: 0, 53%, 49%;
+    --warning-yellow: 51 53% 49%;
   }
 
   .default {
@@ -132,7 +134,8 @@ body {
     --brand-badge-color: 192 100% 21.6%;
 
     --success-green: 135, 53%, 49%;
-    --failure-red: 0 100% 50%;
+    --failure-red: 0, 53%, 49%;
+    --warning-yellow: 51 53% 49%;
   }
 
   ::-webkit-scrollbar {

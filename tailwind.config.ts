@@ -64,6 +64,7 @@ export default {
 
 			successGreen: 'hsl(var(--success-green))',
 			failureRed: 'hsl(var(--failure-red))',
+			warningYellow: 'hsl(var(--warning-yellow))',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
